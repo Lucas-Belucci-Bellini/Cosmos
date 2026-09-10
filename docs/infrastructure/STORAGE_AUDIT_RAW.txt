@@ -1,0 +1,208 @@
+# Baluarte storage audit
+checkout_bytes=3886619625
+checkout_mib=3706.57
+
+## Top-level directories
+   1436    3300.61 MiB scripts
+   9620     283.34 MiB public
+     97      42.17 MiB .obsidian
+    759      12.88 MiB src
+     74      11.09 MiB project V2
+      1       8.91 MiB Crônicas da Baluarte_ Onde os Deuses Sangram.pdf
+      1       7.63 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 1).pdf
+     12       6.98 MiB historico
+    387       6.57 MiB docs
+      1       5.58 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 3).pdf
+      1       4.26 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 2).pdf
+      1       3.25 MiB image.png
+      1       2.10 MiB Equipes ALFA e BRAVO e CHARLIE e DELTA e ECHO e Foxtrott e Golf e Hotel e India e  Juliett e Kilo e Mike e November e Oscar e Papa e Quebec e Romeo (1).pdf
+      1       1.52 MiB Crônicas da Baluarte_ Onde os Deuses Sangram.md
+      1       1.41 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 1).md
+      1       1.08 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 3).md
+      5       0.95 MiB assets
+     21       0.93 MiB desktop
+     54       0.82 MiB android
+    168       0.82 MiB test
+      1       0.76 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 2).md
+      1       0.66 MiB Projeto Baluarte.canvas
+    130       0.58 MiB v2
+      1       0.52 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 4).md
+      2       0.31 MiB Portifolio do criador do site
+      1       0.11 MiB Equipes ALFA e BRAVO e CHARLIE e DELTA e ECHO e Foxtrott e Golf e Hotel e India e  Juliett e Kilo e Mike e November e Oscar e Papa e Quebec e Romeo.md
+      1       0.10 MiB let saudacoes = [_boa noite_, _boa tarde_, _bom dia_]; let indice = 0;  const repetirSaudacoes = setInterval(() =_ {   console.log(saudacoes[indice]);   indice = (indice + 1) % saudacoes.length; }, 1000); __ Repet.md
+      1       0.10 MiB package-lock.json
+      8       0.09 MiB reports
+     15       0.06 MiB backend
+     17       0.06 MiB jarvis-python
+     17       0.05 MiB supabase
+     11       0.04 MiB relatorios
+     10       0.04 MiB api
+     12       0.04 MiB .claude
+     15       0.03 MiB .github
+     16       0.03 MiB backend-java
+      1       0.02 MiB README.md
+      1       0.01 MiB CLAUDE.md
+      1       0.01 MiB tsconfig.json
+      1       0.00 MiB CONTRIBUTING.md
+      1       0.00 MiB HISTORICO_DE_COMMITS.md
+      1       0.00 MiB package.json
+      1       0.00 MiB index.html
+      1       0.00 MiB AGENTS.md
+      2       0.00 MiB projetos
+      1       0.00 MiB .gitattributes
+      1       0.00 MiB .gitignore
+      1       0.00 MiB .vercelignore
+      1       0.00 MiB vercel.json
+      1       0.00 MiB vite.config.js
+      1       0.00 MiB config
+      1       0.00 MiB start.bat
+      1       0.00 MiB render.yaml
+      3       0.00 MiB .workspaces
+      1       0.00 MiB .env.tools.example
+      1       0.00 MiB capacitor.config.json
+      1       0.00 MiB .conversations
+      1       0.00 MiB requirements.txt
+      1       0.00 MiB readme.txt
+      1       0.00 MiB .nvmrc
+      1       0.00 MiB .Nexus-LM-data
+
+## Extensions
+   1302    3096.53 MiB .p3d
+   9589     232.66 MiB .webp
+    115     232.52 MiB .json
+    592      43.05 MiB .js
+      5      28.48 MiB .pdf
+      4      22.60 MiB .glb
+    423      15.39 MiB .md
+     72      13.55 MiB .png
+      9       5.36 MiB .mp3
+      8       3.64 MiB .txt
+      2       3.45 MiB .wasm
+     50       3.11 MiB .html
+    382       2.16 MiB .ts
+    122       1.89 MiB .css
+      1       0.66 MiB .canvas
+     74       0.54 MiB .py
+     50       0.43 MiB .mjs
+      3       0.17 MiB .svg
+     19       0.07 MiB .sql
+     14       0.05 MiB .sqf
+     13       0.05 MiB [no-extension]
+      1       0.04 MiB .jpg
+      1       0.04 MiB .jar
+     11       0.04 MiB .rs
+     16       0.03 MiB .yml
+     16       0.02 MiB .java
+     12       0.01 MiB .xml
+      2       0.01 MiB .sh
+      1       0.01 MiB .ps1
+      1       0.00 MiB .tsv
+      6       0.00 MiB .gradle
+      2       0.00 MiB .bat
+      3       0.00 MiB .example
+      2       0.00 MiB .properties
+      4       0.00 MiB .toml
+      1       0.00 MiB .yaml
+      1       0.00 MiB .pro
+
+## Largest files
+     76.08 MiB scripts/arma3/out/arma3-veiculos.json
+     47.82 MiB scripts/arma3/out/arma3-itens.json
+     29.30 MiB scripts/arma3/out/arma3-acessorios.json
+     17.85 MiB scripts/arma3/out/arma3-config.json
+     17.46 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Troy_16_BLK_CTR.p3d
+     17.06 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Troy_145_BLK_CTR.p3d
+     16.07 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Troy_9_BLK_CTR.p3d
+     16.05 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Troy_115_BLK_CTR.p3d
+     14.18 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Aero_16_OD_CTR.p3d
+     14.05 MiB public/arma3/soldados-db.json
+     13.64 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Aero_145_OD_CTR.p3d
+     12.72 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Aero_105_OD_CTR.p3d
+     12.22 MiB scripts/arma3/out/modelos/MCC_M4A1_300_Aero_85_OD_CTR.p3d
+     12.21 MiB scripts/arma3/out/modelos/MCC_M4A1_556_USGI_145_CTR.p3d
+     12.05 MiB scripts/arma3/out/modelos/MCC_M4A1_300_NFM_145_BLK_CTR.p3d
+     11.95 MiB scripts/arma3/out/modelos/MCC_SpearLT_16_300_ANO_SLK.p3d
+     11.94 MiB scripts/arma3/out/modelos/MCC_SpearLT_145_300_ANO_SLK.p3d
+     11.70 MiB scripts/arma3/out/modelos/MCC_M4A1_300_NFM_115_BLK_CTR.p3d
+     11.65 MiB scripts/arma3/out/modelos/MCC_LMT_MARSL_14_556_DE_CTR.p3d
+     11.65 MiB scripts/arma3/out/modelos/MCC_M4A1_300_NFM_10_BLK_CTR.p3d
+     11.44 MiB scripts/arma3/out/modelos/MCC_SpearLT_115_300_ANO_SLK.p3d
+     11.39 MiB scripts/arma3/out/modelos/MCC_LMT_MARSL_SPECWAR_300_DE_CTR.p3d
+     11.24 MiB scripts/arma3/out/modelos/MCC_M4A1_556_RAS_145_CTR.p3d
+     11.23 MiB scripts/arma3/out/modelos/MCC_M4A1_300_MFR_16_DE_CTR.p3d
+     11.22 MiB scripts/arma3/out/modelos/MCC_MK18_556_RAS_103_CTR.p3d
+     11.19 MiB scripts/arma3/out/modelos/MCC_SpearLT_9_300_ANO_SLK.p3d
+     11.19 MiB scripts/arma3/out/modelos/MCC_SpearLT_L143A2_556.p3d
+     11.15 MiB scripts/arma3/out/modelos/MCC_M4A1_300_MFR_145_DE_CTR.p3d
+     11.14 MiB scripts/arma3/out/modelos/MCC_MK18_FS_556_RAS_103_CTR.p3d
+     11.14 MiB scripts/arma3/out/modelos/MCC_LMT_MARSL_16_556_DE_CTR.p3d
+     11.04 MiB scripts/arma3/out/modelos/MCC_SpearLT_L143A2_300.p3d
+     10.97 MiB scripts/arma3/out/modelos/MCC_M4A1_300_MFR_105_DE_CTR.p3d
+     10.93 MiB scripts/arma3/out/modelos/MCC_M4A1_300_MFR_125_DE_CTR.p3d
+     10.92 MiB scripts/arma3/out/modelos/MCC_LMT_MARSL_10_556_DE_CTR.p3d
+     10.88 MiB scripts/arma3/out/modelos/MCC_KS4_BLK_CTR.p3d
+     10.81 MiB scripts/arma3/out/modelos/MCC_HK416A8_556_14_BLK_HK.p3d
+     10.73 MiB scripts/arma3/out/modelos/MCC_LMT_MARSL_8_556_DE_CTR.p3d
+     10.69 MiB scripts/arma3/out/modelos/MCC_KS2_BLK_CTR.p3d
+     10.64 MiB scripts/arma3/out/modelos/MCC_L403A1.p3d
+     10.64 MiB scripts/arma3/out/modelos/MCC_HK416A8_556_16_BLK_HK.p3d
+     10.63 MiB scripts/arma3/out/modelos/MCC_SOLGW_556_145_BLK_TR.p3d
+     10.59 MiB scripts/arma3/out/modelos/MCC_KS3_BLK_CTR.p3d
+     10.50 MiB scripts/arma3/out/modelos/MCC_SOLGW_556_115_BLK_TR.p3d
+     10.45 MiB scripts/arma3/out/modelos/MCC_HK416A8_556_11_BLK_HK.p3d
+     10.45 MiB scripts/arma3/out/modelos/MSS_SR25_BLK.p3d
+     10.45 MiB scripts/arma3/out/modelos/MSS_M110.p3d
+     10.34 MiB scripts/arma3/out/modelos/SPS_hk417_16_glm_fde_f.p3d
+     10.17 MiB scripts/arma3/out/modelos/MSS_SR25_762_20_B5_BLK.p3d
+     10.17 MiB scripts/arma3/out/modelos/MSS_SR25_762_22_B5_BLK.p3d
+     10.14 MiB scripts/arma3/out/modelos/MCC_REC7_DI_556_OD_CTR.p3d
+     10.13 MiB scripts/arma3/out/modelos/MCC_M4A1_556_URGI.p3d
+     10.10 MiB scripts/arma3/out/modelos/SPS_hk417_13_glm_fde_f.p3d
+     10.10 MiB scripts/arma3/out/modelos/MSS_M110A2.p3d
+     10.01 MiB scripts/arma3/out/modelos/MCC_MK18_URGI.p3d
+     10.00 MiB scripts/arma3/out/modelos/MSS_M110A3S.p3d
+      9.97 MiB scripts/arma3/out/modelos/MCC_M4A1_300_SMR_9_BLK_CTR.p3d
+      9.95 MiB scripts/arma3/out/modelos/MSS_SR25_762_16_B5_BLK.p3d
+      9.92 MiB scripts/arma3/out/modelos/MSS_M110A3L.p3d
+      9.86 MiB scripts/arma3/out/modelos/MSS_SR25_762_14_B5_BLK.p3d
+      9.83 MiB scripts/arma3/out/arma3-funcoes.json
+      9.60 MiB scripts/arma3/out/modelos/MCC_LMT_MARSL_R20_RAHE.p3d
+      9.42 MiB public/modelos-3d/lanterna.glb
+      9.14 MiB scripts/arma3/out/modelos/Louetta_LVAW.p3d
+      9.09 MiB scripts/arma3/out/modelos/MCC_RattlerLT_7_300_BLK_MPLFS.p3d
+      9.04 MiB scripts/arma3/out/modelos/MCC_G95A1_556.p3d
+      9.03 MiB scripts/arma3/out/modelos/MCC_RattlerLT_6_300_BLK_MPLFS.p3d
+      8.95 MiB scripts/arma3/out/modelos/MCC_G95_KSK_556.p3d
+      8.94 MiB scripts/arma3/out/modelos/MCC_G95KA1_556.p3d
+      8.91 MiB Crônicas da Baluarte_ Onde os Deuses Sangram.pdf
+      8.47 MiB .obsidian/plugins/obsidian-excalidraw-plugin/main.js
+      8.42 MiB scripts/arma3/out/arma3-animacoes.json
+      8.37 MiB scripts/arma3/out/modelos/TOTT_416_R_145_SMR_Mix_CTR.p3d
+      8.26 MiB scripts/arma3/out/modelos/TOTT_416_145_SMR_Mix_CTR.p3d
+      8.23 MiB scripts/arma3/out/modelos/MSS_MRAD_300PRC_Carbon_OD_26.p3d
+      8.23 MiB scripts/arma3/out/modelos/MSS_MK22_300PRC.p3d
+      8.23 MiB scripts/arma3/out/modelos/MSS_MRAD_762_OD_24.p3d
+      8.23 MiB scripts/arma3/out/modelos/MSS_MRAD_762_OD_17.p3d
+      8.23 MiB scripts/arma3/out/modelos/MSS_MK22_762.p3d
+      8.23 MiB scripts/arma3/out/modelos/MSS_MRAD_338LM_OD_20.p3d
+      8.20 MiB scripts/arma3/out/modelos/MSS_MK22_338NM.p3d
+      8.08 MiB scripts/arma3/out/modelos/MSS_MRAD_7PRC_OD_26.p3d
+      8.08 MiB scripts/arma3/out/modelos/MSS_MK22_300NM.p3d
+      7.81 MiB scripts/arma3/out/modelos/TOTT_416_R_104_MVAW_Mix_CTR.p3d
+      7.77 MiB scripts/arma3/out/modelos/TOTT_NSR_300_CTR.p3d
+      7.76 MiB scripts/arma3/out/modelos/TOTT_416_104_MVAW_Mix_CTR.p3d
+      7.66 MiB scripts/arma3/out/modelos/TOTT_416_R_145_Lancer_Mix_CTR.p3d
+      7.63 MiB Crônicas da Baluarte_ Onde os Deuses Sangram (continuação 1).pdf
+      7.52 MiB public/modelos-3d/veiculo-buggy.glb
+      7.52 MiB scripts/arma3/out/modelos/TOTT_416_R_104_SMR_Mix_CTR.p3d
+      7.51 MiB scripts/arma3/out/modelos/TOTT_416_R_104_Lancer_Mix_CTR.p3d
+      7.47 MiB scripts/arma3/out/modelos/MSS_ATXC_762_24_DE.p3d
+      7.47 MiB scripts/arma3/out/modelos/MSS_ATXC_6CM_26_DE.p3d
+      7.47 MiB scripts/arma3/out/modelos/MSS_ATXC_762_20_DE.p3d
+      7.43 MiB scripts/arma3/out/modelos/MSS_TRGM10_300NM_ARC.p3d
+      7.43 MiB scripts/arma3/out/modelos/MSS_TRGM10_338LM_20_ARC.p3d
+      7.38 MiB scripts/arma3/out/modelos/TOTT_416_104_SMR_Mix_CTR.p3d
+      7.34 MiB scripts/arma3/out/modelos/TOTT_416_104_Lancer_Mix_CTR.p3d
+      7.28 MiB scripts/arma3/out/modelos/MSS_TRGM10_300WM_ARC.p3d
+      7.27 MiB scripts/arma3/out/modelos/TOTT_416_145_Lancer_Mix_CTR.p3d
+      7.27 MiB scripts/arma3/out/modelos/MSS_AXELR_408CT_27_DE.p3d
