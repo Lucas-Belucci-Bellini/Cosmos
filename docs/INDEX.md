@@ -10,6 +10,8 @@
 - [Feature Catalog — 46 capability groups](product/FEATURE_CATALOG.md)
 - [Migration Matrix — 56 traceable rows](migration/MIGRATION_MATRIX.md)
 - [Data Catalog](data/DATA_CATALOG.md)
+- [Database Strategy — PostgreSQL / SQL-first](data/DATABASE_STRATEGY.md)
+- [SQL Data Model Plan](data/SQL_DATA_MODEL_PLAN.md)
 - [Asset Catalog](assets/ASSET_CATALOG.md)
 - [Page Inventory](INVENTARIO_PAGINAS_BALUARTE.md)
 - [Functional Sub-inventory — expanded audit map](migration/SUBINVENTARIO_FUNCIONAL.md)
@@ -28,6 +30,7 @@
 - [Security Architecture](security/SECURITY_ARCHITECTURE.md)
 - [Test Strategy](testing/TEST_STRATEGY.md)
 - [ADR-0001](decisions/ADR/ADR-0001-rebuild-not-copy.md)
+- [ADR-0002 — SQL-first data layer](decisions/ADR/ADR-0002-sql-first-data-layer.md)
 
 ## Existing migration documents
 - [Selective Migration](MIGRACAO_SELETIVA.md)
