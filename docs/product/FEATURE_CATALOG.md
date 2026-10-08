@@ -33,6 +33,14 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 | FTR-027 | Learning | Aprendizado, tutoriais e guia de PC | `src/pages/aprendizado.ts`, `src/pages/arma3-tutorial.ts`, `src/pages/guia-pc.ts` | Conteúdo versionado | P3 | REBUILD/ADAPT |
 | FTR-028 | Robotics/Tech | Robótica, tecnologia e guias técnicos | `src/pages/robotica.ts`, `src/pages/tecnologia-militar.ts` | Conteúdo, fontes e manutenção | P4 | REFERENCE/REBUILD |
 
+| FTR-029 | Core/Shell | Home, router, navegação, lifecycle e estados de erro | `src/main.js`, `src/core`, `src/layout`, `src/pages/home.ts` | Contrato de módulo, roteamento, acessibilidade | P0 | REBUILD |
+| FTR-030 | Developer Tools | Git Nexus, mapa de símbolos e inteligência de repositórios | `src/pages/git-nexus*`, `src/utils/git-nexus-*`, `src/data/codemap.json` | Tamanho do repo, stale indexes, operações Git | P1 | REBUILD/ADAPT |
+| FTR-031 | Developer Tools | Regex, texto, símbolos e utilitários de conversão | `src/pages/regex.ts`, `src/pages/simbolos.ts`, `src/pages/utilidades.ts` | Entradas adversariais, Unicode, performance | P2 | REBUILD/ADAPT |
+| FTR-032 | Science/Education | Tabela periódica e propriedades científicas | `src/pages/tabela-periodica.ts` | Proveniência, unidades, precisão | P3 | ADAPT/REBUILD |
+| FTR-033 | Communication | Mural, Conselho, eventos e notificações | `src/pages/mural.ts`, `src/pages/comms.ts`, `src/pages/conselho.ts`, `src/core/events*` | Auth, persistência, spam, privacidade | P4 | REBUILD/DEFER |
+| FTR-034 | Product/Projects | Projetos, roadmap, perfil público, sobre e downloads | `src/pages/projetos.ts`, `roadmap.ts`, `sobre.ts`, `baixar.ts`, `perfil.ts` | Conteúdo canônico, links, dados privados | P2 | REBUILD/ADAPT |
+| FTR-035 | Visual | Galeria 3D, preview, seleção e carregamento de modelos | `src/pages/modelos-3d.ts`, `src/data/modelos-3d.json`, `public/modelos-3d/` | WebGL, licença, tamanho dos assets | P3 | ADAPT/REBUILD |
+| FTR-036 | Security/Operations | Diagnóstico, segurança defensiva e privacidade | `src/pages/diagnostico.ts`, `src/pages/seguranca.ts`, `src/pages/ciberseg.ts` | Escopo autorizado, falsos positivos, dados sensíveis | P1 | REBUILD/ADAPT |
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
