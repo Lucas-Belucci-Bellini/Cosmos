@@ -69,7 +69,10 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 ## Latest migration audit
 
-- Feature Catalog: 44 capability groups.
-- Migration Matrix: 54 traceable rows.
+- Feature Catalog: 46 capability groups.
+- Migration Matrix: 56 traceable rows.
 - Latest report: `reports/migration/AUDIT-2026-10-08-002.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
+
+
+Latest audit: `reports/migration/AUDIT-2026-10-08-003.md`. Follow-up Issues #48–#49 cover the remaining military-history/data pages and utilities/Shadow/Batalha Naval.
