@@ -71,7 +71,7 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 
 | MIG-060 | `src/utils/jarvis-context.ts`, `src/utils/jarvis-recall.js` | orçamento de contexto, cache de briefing e recall TF-IDF/cosseno | runtime de IA/memória Cosmos | REBUILD/ADAPT | DOCUMENTED | Contrato legado limita mensagens/caracteres e corpus de recall a 256 docs; Cosmos deve testar truncamento, ranking, isolamento e não confundir cache com persistência. |
 
-## Regras de migração
+| MIG-061 | `src/core/permissions.ts`, `src/core/politica.js`, `test/permissions.test.js`, `test/politica.test.js`, `docs/v2/V2_SECURITY_RULES.md` | catálogo de permissões, negação por padrão, riscos, curinga, revogação e contratos de teste | Security/Authorization Cosmos | REBUILD/REFERENCE | DOCUMENTED | Auditoria estática confirmou invariantes úteis, mas o motor de origem no cliente não substitui autorização server-side. Reimplementar com testes por pedido/recurso/tenant; nenhum teste foi executado nesta auditoria. |\n\n## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
 - A origem deve ser identificada por caminho e, quando possível, commit SHA.
