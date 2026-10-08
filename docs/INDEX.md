@@ -15,6 +15,7 @@
 - [Functional Sub-inventory — expanded audit map](migration/SUBINVENTARIO_FUNCIONAL.md)
 - [Storage Analysis](infrastructure/STORAGE_ANALYSIS.md)
 - [Raw Storage Audit](infrastructure/STORAGE_AUDIT_RAW.txt)
+- [Migration Progress Report — 2026-10-08](reports/migration/AUDIT-2026-10-08-001.md)
 
 ## Architecture and quality
 - [System Map](architecture/SYSTEM_MAP.md)
