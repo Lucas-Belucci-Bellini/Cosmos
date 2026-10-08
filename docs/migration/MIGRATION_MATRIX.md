@@ -83,3 +83,6 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 - `DOCUMENTED` significa inventariado; não significa implementado.
 - O Cosmos deve compilar, testar e executar sem depender de um checkout do Baluarte.
 - Migrar em fatias verticais: contrato → dados → implementação → testes → documentação.
+
+
+| MIG-063 | `api/chat.py`, `api/hermes.py`, `api/health.py`, `api/memory.py`, `api/nucleo.py`, `api/claude.py`, `backend/server.py`, `backend/transport_security.py` | recuperação da camada de APIs e adaptador Hermes para J.A.R.V.I.S. | API/AI Runtime | REBUILD/REFERENCE/VERIFY | DOCUMENTED | A árvore Baluarte `main` ainda contém código de API, mas deploy, envs, credenciais e funcionamento não foram verificados. Definir contrato versionado, provider adapter, auth server-side, limites, erros, timeout, rate limit, memória e testes; ver auditoria #013 e issue #58. |
