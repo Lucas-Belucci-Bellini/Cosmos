@@ -67,6 +67,8 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 
 | MIG-058 | `src/core/storage.ts`, `src/core/auth-session.ts`, `src/core/supabase.js`, `src/core/permissions.ts` | storage versionado, sessão, acesso remoto e autorização | Data Layer/Identity Cosmos + PostgreSQL | REBUILD/ADAPT/REFERENCE | DOCUMENTED | Auditoria estática confirmou schemas versionados, fallback local, classes de dados, projeção de sessão, timeout de API e chamadas RPC. Mapear consumidores e impor autorização server-side; não portar endpoint/tokens legados. |
 
+| MIG-059 | `src/pages/mural.ts`, `src/utils/visit-counter.ts`, `src/utils/page-views.ts`, `src/utils/mil-curation.ts`; `supabase/migrations/20260622033728_create_mural_posts.sql`, `20260622214241_site_stats.sql`, `20260628192255_mil_curation.sql` | consumidores reais de tabelas SQL, fallback local e RPCs | PostgreSQL Cosmos, apenas se capacidades forem aprovadas | REFERENCE/REBUILD | DOCUMENTED | Auditoria rastreou mural, métricas e curadoria. Banco legado contém múltiplos domínios; RPCs SECURITY DEFINER exigem revisão e nenhuma tabela deve ser copiada sem consumidor Cosmos confirmado. |
+
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
