@@ -53,6 +53,8 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 | FTR-046 | Utilities/Games | Utilidades restantes, Shadow e Batalha Naval | `src/pages/utilidades.ts`, `shadow.ts`, `batalha-naval.ts` | Função real, duplicatas, consumidores | P3 | REBUILD/ADAPT |
 | FTR-047 | SQL Data Layer | Persistência relacional, migrações, constraints, transações e proveniência | `docs/data/DATABASE_STRATEGY.md`, `docs/data/SQL_DATA_MODEL_PLAN.md` | Acesso, policies, migrations, backup e isolamento | P1 | REBUILD |
 
+| FTR-048 | Data Layer / Identity | Storage versionado, fallback offline, projeção de sessão e adaptadores remotos seguros | `src/core/storage.ts`, `src/core/auth-session.ts`, `src/core/supabase.js`, `src/core/permissions.ts` | Privacidade, autorização server-side, migrações e falhas de rede | P1 | REBUILD/ADAPT |
+
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
