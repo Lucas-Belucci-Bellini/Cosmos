@@ -1,20 +1,46 @@
-# Feature Catalog
+# Feature Catalog — Projeto-Baluarte → Cosmos
 
-O catálogo descreve capacidades observadas no Baluarte e decisões iniciais para o Cosmos. O estado do Baluarte não implica compromisso de reconstrução.
+Este catálogo agrupa as capacidades identificadas no repositório de origem. É um inventário de descoberta, não uma promessa de reconstrução integral. A implementação só é considerada migrada quando existe no Cosmos, tem contrato próprio e passou por testes.
 
-| ID | Domínio | Funcionalidade | Entradas/saídas | Dependências | Cosmos | Prioridade | Decisão |
-|---|---|---|---|---|---|---|---|
-| FTR-001 | J.A.R.V.I.S. | Núcleo visual V7 | interação, áudio → visual 3D | WebGL, áudio, iframe | DOCUMENTED | P0 | REBUILD/ADAPT |
-| FTR-002 | J.A.R.V.I.S. | Chat e memória | texto/contexto → resposta/estado | auth, storage, IA | DISCOVERY | P2 | avaliar depois do core |
-| FTR-003 | Arsenal | catálogo editorial | filtros → itens/detalhes | dataset local | PLANNED | P1 | REBUILD |
-| FTR-004 | Arsenal | catálogo técnico Arma 3 | arma/filtro → dados balísticos | JSONs grandes | PLANNED | P2 | ADAPT |
-| FTR-005 | Militar | enciclopédia e história | busca → artigos | conteúdo editorial | DISCOVERY | P3 | avaliar |
-| FTR-006 | Knowledge | biblioteca/dossiê | navegação → leitura | JSON/documentos | DISCOVERY | P2 | avaliar |
-| FTR-007 | Tools | editor/JSON/terminal | arquivo/comando → resultado | sandbox/segurança | DISCOVERY | P3 | reconstruir isoladamente |
-| FTR-008 | Media | música/rádio/FFT | mídia → reprodução/análise | APIs/permissões | DISCOVERY | P3 | avaliar |
-| FTR-009 | Vision | visão/OCR/mapa/radar | imagem/localização → análise | APIs/device | DISCOVERY | P4 | avaliar |
-| FTR-010 | Account | login/perfil | credenciais → sessão | auth/database | DISCOVERY | P4 | schema próprio |
-| FTR-011 | Platform | desktop/mobile | comandos → runtime | wrappers nativos | DEFERRED | P5 | não iniciar agora |
-| FTR-012 | Content | jogos/Zomboid/modpack | configuração → conteúdo | dados/assets | DISCOVERY | P4 | avaliar |
+| ID | Domínio | Funcionalidade/capacidade | Origem indicativa no Baluarte | Dependências/risco | Prioridade inicial | Decisão inicial |
+|---|---|---|---|---|---|---|
+| FTR-001 | J.A.R.V.I.S. | Núcleo visual V7 | `project V2/Modelar objeto 3D`, `src/pages/jarvis*` | WebGL, áudio, iframe, lifecycle | P0 | ADAPT/REBUILD |
+| FTR-002 | J.A.R.V.I.S. | Chat, contexto e memória | `src/pages/jarvis*`, `src/utils/jarvis-*`, `src/data/cerebro.json` | IA, privacidade, storage | P1 | REBUILD |
+| FTR-003 | J.A.R.V.I.S. | Voz, escuta e síntese | `src/utils/jarvis-voice*`, `jarvis-python/` | Permissão de microfone, runtime | P2 | ADAPT/REBUILD |
+| FTR-004 | J.A.R.V.I.S. | Skills, ferramentas e agentes | `src/utils/jarvis-tools*`, `src/utils/jarvis-skills*` | Permissões, chamadas de ferramentas | P1 | REBUILD |
+| FTR-005 | Arsenal | Catálogo editorial | `src/pages/arsenal*`, `src/data/arsenal*` | Dataset, pesquisa e filtros | P1 | REBUILD/ADAPT |
+| FTR-006 | Arma 3 | Catálogo de armas e balística | `src/pages/arma3*`, `src/data/arma3-*`, `public/arma3` | Dataset grande, assets/licenças | P2 | ADAPT |
+| FTR-007 | Arma 3 | Veículos, unidades, mapas e equipamentos | `src/data/arma3-*`, `public/arma3` | JSONs grandes, procedência | P3 | ADAPT/REFERENCE |
+| FTR-008 | Knowledge | Biblioteca, dossiês e busca | `src/pages/biblioteca.ts`, `src/pages/dossie.ts`, `src/data/dossie.json` | Documentos, indexação | P1 | REBUILD/ADAPT |
+| FTR-009 | Conhecimento militar | Enciclopédia, história e conflitos | `src/pages/enciclopedia-militar.ts`, `src/pages/historia-militar.ts` | Conteúdo editorial, fontes | P3 | REBUILD/REFERENCE |
+| FTR-010 | IDE/Tools | Editor de código e snippets | `src/pages/editor.ts`, `src/utils/editor-*`, `src/data/editor-*` | Workspace, sandbox, linguagem | P1 | REBUILD |
+| FTR-011 | IDE/Tools | Editor e validador JSON | `src/pages/json-studio.ts`, `src/pages/codigo.ts` | Validação, arquivos, limites | P1 | REBUILD |
+| FTR-012 | IDE/Tools | Terminal e execução de comandos | `src/pages/terminal.ts`, `src/utils/terminal-engine*`, `desktop/src` | RISCO ALTO: execução local | P2 | REBUILD COM PERMISSÕES |
+| FTR-013 | Developer Tools | Git Helper e Git Nexus | `src/pages/git-helper.ts`, `src/pages/git-nexus*`, `src/utils/git-nexus-*` | Git, filesystem, análise de repositório | P1 | REBUILD/ADAPT |
+| FTR-014 | Data/Calculators | Calculadoras científica, numérica e especializada | `src/pages/calc-*`, `src/pages/calculadoras/`, `src/utils/calc-engine*` | Precisão e testes matemáticos | P2 | REBUILD/ADAPT |
+| FTR-015 | Logic/Education | Tabela-verdade, lógica e circuitos | `src/pages/tabela-verdade.ts`, `src/pages/logic-sim.ts`, `src/data/logic-*` | Correção de regras, acessibilidade | P2 | REBUILD |
+| FTR-016 | Media | Música, rádio e reprodução | `src/pages/musicas.ts`, `src/pages/radio.ts`, `src/utils/jarvis-spotify*` | APIs externas, direitos, credenciais | P3 | REBUILD/REFERENCE |
+| FTR-017 | Media | FFT, visualização e análise de áudio | `src/pages/fft.ts`, `src/utils/fft-engine*` | Performance, Web Audio | P3 | ADAPT/REBUILD |
+| FTR-018 | Vision/Maps | OCR e visão computacional | `src/pages/ocr.ts`, `src/pages/visao.ts`, `jarvis-python/` | IA, privacidade, CPU/GPU | P3 | REBUILD |
+| FTR-019 | Vision/Maps | Mapas, radar, geopulse e triangulação | `src/pages/mapa.ts`, `src/pages/radar.ts`, `src/pages/geopulse.ts` | Geolocalização e APIs | P4 | REBUILD/REFERENCE |
+| FTR-020 | Account | Login, perfil e preferências | `src/pages/login.ts`, `src/pages/perfil.ts`, `src/core/auth-session.ts` | Auth, segurança, banco | P2 | REBUILD |
+| FTR-021 | Platform | Desktop e IPC | `desktop/src` | Processo local, permissões, empacotamento | P3 | REBUILD/REFERENCE |
+| FTR-022 | Platform | Android/Capacitor | `android/`, `capacitor.config.json` | Permissões móveis e release | P5 | DEFER |
+| FTR-023 | Content | Zomboid, modpacks e administração | `src/pages/zomboid*`, `src/pages/modpack.ts`, `src/data/zomboid-*` | Dados de jogos, versões e compatibilidade | P4 | REFERENCE/REBUILD |
+| FTR-024 | Content | Jogos, vídeos, filmes e universo narrativo | `src/pages/jogos.ts`, `src/pages/videos.ts`, `src/data/universos.js`, `src/data/cronicas.js` | Direitos, conteúdo e metadados | P4 | REFERENCE/REBUILD |
+| FTR-025 | Integrations | APIs, economia, câmbio e fontes externas | `src/pages/apis.ts`, `src/pages/economia.ts`, `src/pages/dolar.ts`, `src/utils/*api*` | Limites, disponibilidade e segredos | P3 | REBUILD |
+| FTR-026 | Platform | Backup, storage, sincronização e offline | `src/core/backup*`, `src/core/storage*`, `src/core/media-sync*` | Integridade, privacidade e recuperação | P1 | REBUILD |
+| FTR-027 | Learning | Aprendizado, tutoriais e guia de PC | `src/pages/aprendizado.ts`, `src/pages/arma3-tutorial.ts`, `src/pages/guia-pc.ts` | Conteúdo versionado | P3 | REBUILD/ADAPT |
+| FTR-028 | Robotics/Tech | Robótica, tecnologia e guias técnicos | `src/pages/robotica.ts`, `src/pages/tecnologia-militar.ts` | Conteúdo, fontes e manutenção | P4 | REFERENCE/REBUILD |
 
-Cada funcionalidade aprovada deverá receber uma ficha em `docs/modules/` com contrato, dados, integração, testes e método de migração.
+## Regras de priorização
+
+1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
+2. P2 após contratos e quality gates: catálogos técnicos, cálculos, login e ferramentas locais controladas.
+3. P3/P4/P5 dependem de prioridade real, fontes, licenças, custo operacional e consumidores confirmados.
+4. Itens semelhantes devem ser consolidados em módulos quando compartilham contratos e domínio; não criar páginas só para reproduzir o menu antigo.
+5. Cada módulo aprovado deve ter ficha em `docs/modules/` com propósito, limites, contrato, modelo de dados, permissões, migração, testes e critérios de aceite.
+
+## Estados
+
+Use os estados definidos na matriz de migração. `DOCUMENTED` significa inventariado; não significa implementado. Nenhum estado pode ser elevado sem evidência verificável.
