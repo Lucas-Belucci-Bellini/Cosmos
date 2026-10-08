@@ -7,8 +7,8 @@
 - [Roadmap](roadmap/ROADMAP.md)
 
 ## Discovery and migration
-- [Feature Catalog — 49 capability groups](product/FEATURE_CATALOG.md)
-- [Migration Matrix — 59 traceable rows](migration/MIGRATION_MATRIX.md)
+- [Feature Catalog — 50 capability groups](product/FEATURE_CATALOG.md)
+- [Migration Matrix — 60 traceable rows](migration/MIGRATION_MATRIX.md)
 - [Data Catalog](data/DATA_CATALOG.md)
 - [Database Strategy — PostgreSQL / SQL-first](data/DATABASE_STRATEGY.md)
 - [SQL Data Model Plan](data/SQL_DATA_MODEL_PLAN.md)
@@ -74,9 +74,9 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 ## Latest migration audit
 
-- Feature Catalog: 49 capability groups.
-- Migration Matrix: 59 traceable rows.
-- Latest report: `reports/migration/AUDIT-2026-10-08-007.md`.
+- Feature Catalog: 50 capability groups.
+- Migration Matrix: 60 traceable rows.
+- Latest report: `reports/migration/AUDIT-2026-10-08-008.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
 
 
