@@ -65,6 +65,8 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 | MIG-056 | `src/pages/utilidades.ts`, `shadow.ts`, `batalha-naval.ts` | utilidades restantes, Shadow e jogo Batalha Naval | Utilities/Games | REBUILD/ADAPT | DISCOVERY | Confirmar comportamento no código; não inferir função pelo nome da rota. |
 | MIG-057 | schema e serviços SQL do Cosmos; legado Baluarte `backend/`, `api/`, `supabase/` apenas como referência | persistência relacional, migrações, relações e transações | PostgreSQL central; provedor gerenciado pendente | REBUILD/REFERENCE | DOCUMENTED | ADR-0002 aprova SQL-first/PostgreSQL como alvo central; não reutilizar schema/credenciais legadas sem reconciliação. Criar tabelas somente após confirmar consumidores, acesso e testes. |
 
+| MIG-058 | `src/core/storage.ts`, `src/core/auth-session.ts`, `src/core/supabase.js`, `src/core/permissions.ts` | storage versionado, sessão, acesso remoto e autorização | Data Layer/Identity Cosmos + PostgreSQL | REBUILD/ADAPT/REFERENCE | DOCUMENTED | Auditoria estática confirmou schemas versionados, fallback local, classes de dados, projeção de sessão, timeout de API e chamadas RPC. Mapear consumidores e impor autorização server-side; não portar endpoint/tokens legados. |
+
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
