@@ -7,8 +7,8 @@
 - [Roadmap](roadmap/ROADMAP.md)
 
 ## Discovery and migration
-- [Feature Catalog — 28 capability groups](product/FEATURE_CATALOG.md)
-- [Migration Matrix — 38 traceable groups](migration/MIGRATION_MATRIX.md)
+- [Feature Catalog — 36 capability groups](product/FEATURE_CATALOG.md)
+- [Migration Matrix — 46 traceable groups](migration/MIGRATION_MATRIX.md)
 - [Data Catalog](data/DATA_CATALOG.md)
 - [Asset Catalog](assets/ASSET_CATALOG.md)
 - [Page Inventory](INVENTARIO_PAGINAS_BALUARTE.md)
