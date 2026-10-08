@@ -63,6 +63,8 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 | MIG-054 | `src/pages/economia.ts`, `src/pages/dolar.ts` e helpers de API | câmbio e indicadores externos | Data Integrations | REBUILD/ADAPT | DISCOVERY | Mostrar fonte, unidade, timestamp, atraso e política de falha. |
 | MIG-055 | `src/pages/forcas-especiais.ts`, `organizacao-militar.ts`, `enciclopedia-militar.ts`, `historia-militar.ts`, `armas-por-pais.ts`, `guerras-conflitos.ts`, `batalhas-historicas.ts`, `orcamentos-militares.ts`, `poder-militar.ts`, `taticas-estrategias.ts` | enciclopédia, história e indicadores militares | Technical Knowledge | ADAPT/REFERENCE | DISCOVERY | Confirmar fontes, data, metodologia e duplicatas; conteúdo deve ser educativo e verificável. |
 | MIG-056 | `src/pages/utilidades.ts`, `shadow.ts`, `batalha-naval.ts` | utilidades restantes, Shadow e jogo Batalha Naval | Utilities/Games | REBUILD/ADAPT | DISCOVERY | Confirmar comportamento no código; não inferir função pelo nome da rota. |
+| MIG-057 | schema e serviços SQL do Cosmos; legado Baluarte `backend/`, `api/`, `supabase/` apenas como referência | persistência relacional, migrações, relações e transações | PostgreSQL central; provedor gerenciado pendente | REBUILD/REFERENCE | DOCUMENTED | ADR-0002 aprova SQL-first/PostgreSQL como alvo central; não reutilizar schema/credenciais legadas sem reconciliação. Criar tabelas somente após confirmar consumidores, acesso e testes. |
+
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
