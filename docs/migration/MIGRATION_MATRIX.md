@@ -6,11 +6,11 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 
 | ID | Baluarte / origem | Capacidade | Destino Cosmos | Método | Status | Motivo/ação necessária |
 |---|---|---|---|---|---|---|
-| MIG-001 | `src/main.js`, `src/core`, `src/layout` | shell, router e lifecycle | shell/runtime Cosmos | REBUILD | DOCUMENTED | O código antigo não deve comandar a arquitetura nova. |
+| MIG-001 | `src/main.js`, `src/core`, `src/layout`, `src/core/router.ts` (canônico; `router.js` é wrapper) | shell, router hash-based e lifecycle | shell/runtime Cosmos | REBUILD | DOCUMENTED | Inspeção estática confirmou registro/validação de rotas, parâmetros/query, eventos `route:*` e tratamento de handlers assíncronos; criar testes Cosmos equivalentes, sem portar o shell V1. |
 | MIG-002 | `project V2/Modelar objeto 3D/jarvis-nucleo-v7.*` | núcleo visual V7 | `public/jarvis-v7` | ADAPT | IN_PROGRESS | Artefato transferido; integração de rota e testes ainda pendentes. |
 | MIG-003 | `src/utils/jarvis-v7-visual.ts` | adaptador visual | módulo visual Cosmos | ADAPT | PLANNED | Eliminar dependência de helpers internos da origem. |
 | MIG-004 | `src/data/cerebro.json`, `src/data/dossie.json` | dados de conhecimento | data/JARVIS | COPY | DOCUMENTED | Definir schema, consumidor, versão e política de privacidade. |
-| MIG-005 | `src/pages/jarvis*`, `src/utils/jarvis-*` | chat, memória, voz, skills e agentes | módulos JARVIS | REBUILD | DISCOVERY | Separar contratos de IA, voz, memória e ferramentas; não portar segredos. |
+| MIG-005 | `src/pages/jarvis.ts`, `src/utils/jarvis-context.ts`, `jarvis-recall.js`, `jarvis-tools.js` e demais `jarvis-*` | chat, providers/modos, contexto, memória, voz, skills e ferramentas de agente | módulos JARVIS | REBUILD | DISCOVERY | Inspeção estática confirmou orçamento de contexto, recall TF-IDF/cosseno com cache limitado, schemas de ferramentas e integração com guard/permissões; mapear o caminho de envio e validar os limites antes de migrar. |
 | MIG-006 | `src/pages/arsenal*`, `src/data/arsenal*` | catálogo editorial | módulo Arsenal | REBUILD/ADAPT | PLANNED | Validar dataset e schema antes da importação. |
 | MIG-007 | `src/pages/arma3*`, `src/data/arma3-*` | catálogo técnico Arma 3 | módulos técnicos sob demanda | ADAPT | PLANNED | Importar datasets por consumidor, não como lote único. |
 | MIG-008 | `public/arma3/**/*.webp` | imagens de catálogo | storage/CDN por módulo | ADAPT | DOCUMENTED | Selecionar assets e verificar origem/licença/hash. |
@@ -31,7 +31,7 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 | MIG-023 | `src/pages/zomboid*`, `modpack.ts`, `src/data/zomboid-*` | jogos, modpacks e administração | módulo Game Knowledge | REFERENCE/REBUILD | DISCOVERY | Versionar dados e validar compatibilidade. |
 | MIG-024 | `src/pages/jogos.ts`, `videos.ts`, `src/data/cronicas.js`, `universos.js` | mídia e universo narrativo | módulos de conteúdo | REFERENCE/ADAPT | DISCOVERY | Confirmar licenças, origem e escopo antes de importar. |
 | MIG-025 | `src/pages/apis.ts`, `economia.ts`, `dolar.ts`, helpers de API | integrações externas | adapters de serviço | REBUILD | DISCOVERY | Segredos fora do Git, timeout, cache e fallback. |
-| MIG-026 | `src/core/backup*`, `storage*`, `media-sync*` | backup, storage e sync | camada Data/Storage | REBUILD | DISCOVERY | Garantir integridade, restore testado e políticas de retenção. |
+| MIG-026 | `src/core/backup.js`, `src/core/storage*`, `src/core/politica.js`, `scripts/v2-backup-restore-drill.mjs` | backup, restore, storage e sync | camada Data/Storage | REBUILD | DISCOVERY | O backup exclui `auth:session`, valida envelope versionado e restaura apenas chaves conhecidas; o drill local deixa RPO/RTO como não aprovados. Criar formato Cosmos próprio e medir recuperação. |
 | MIG-027 | `src/pages/aprendizado.ts`, tutoriais e guia de PC | aprendizagem e documentação interativa | módulo Learning | ADAPT/REBUILD | DISCOVERY | Separar conteúdo estático de lógica executável. |
 | MIG-028 | `src/pages/robotica.ts`, `tecnologia-militar.ts` e páginas técnicas | conteúdo técnico | módulo Technical Knowledge | REFERENCE/REBUILD | DISCOVERY | Curadoria, fontes e manutenção antes da migração. |
 | MIG-029 | `supabase/migrations`, `backend/`, `backend-java/`, `api/` | APIs, auth, banco e realtime | serviços Cosmos | REBUILD | DISCOVERY | Desenhar schema e contratos novos; não reproduzir automaticamente o backend. |
@@ -43,7 +43,7 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 | MIG-035 | `public/modelos-3d`, áudio, PDFs, PNGs e outros assets | assets diversos | storage por módulo | ADAPT/ARCHIVE | DISCOVERY | Catalogar tamanho, checksum, licença, finalidade e consumidor. |
 | MIG-036 | `.claude/skills`, `AGENTS.md`, `CLAUDE.md`, scripts de automação | instruções e ferramentas de agentes | automação Cosmos revisada | REFERENCE/ADAPT | DISCOVERY | Auditar comandos e caminhos; nenhuma instrução antiga é confiável por padrão. |
 | MIG-037 | `.obsidian`, canvases e notas pessoais/projeto | base de conhecimento | docs/knowledge opcional | REFERENCE/ARCHIVE | DISCOVERY | Filtrar duplicatas e conteúdo não destinado ao produto. |
-| MIG-038 | `test/`, testes e fixtures antigos | evidências de comportamento | testes de regressão Cosmos | REFERENCE/ADAPT | DISCOVERY | Reutilizar casos de teste após revisar expectativas; não considerar testes antigos como prova do Cosmos. |
+| MIG-038 | `test/`, `scripts/v2-integracao.mjs`, `scripts/v2-backup-restore-drill.mjs` | testes, harness de integração e evidências de recuperação | testes de regressão Cosmos | REFERENCE/ADAPT | DOCUMENTED | Foram inspecionados scripts, não executados nesta auditoria. Adaptar testes comportamentais e manter resultados/ambiente registrados; teste antigo não prova o Cosmos. |
 
 | MIG-039 | `src/main.js`, `src/core`, `src/layout`, `src/pages/home.ts` | shell, router, navegação e lifecycle | shell Cosmos | REBUILD | PLANNED | Criar contrato de módulo e testes de rota; não importar o shell antigo. |
 | MIG-040 | `src/pages/git-nexus*`, `src/utils/git-nexus-*`, `src/data/codemap.json` | inteligência de repositórios | Developer Tools | REBUILD/ADAPT | DISCOVERY | Confirmar fontes, atualidade do índice, exclusões e limites de processamento. |
