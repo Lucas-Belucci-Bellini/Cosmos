@@ -35,6 +35,7 @@
 - [Multi-language Security Model](security/MULTI_LANGUAGE_SECURITY_MODEL.md)
 - [Migration Audit — permissions and policy contracts (009)](reports/migration/AUDIT-2026-10-08-009.md)
 - [Migration Audit — storage, router and existing J.A.R.V.I.S. contracts (010)](reports/migration/AUDIT-2026-10-08-010.md)
+- [Migration Audit — J.A.R.V.I.S. iframe security and audio lifecycle (011)](reports/migration/AUDIT-2026-10-08-011.md)
 - [Test Strategy](testing/TEST_STRATEGY.md)
 - [ADR-0001](decisions/ADR/ADR-0001-rebuild-not-copy.md)
 - [ADR-0002 — SQL-first data layer](decisions/ADR/ADR-0002-sql-first-data-layer.md)
@@ -103,3 +104,5 @@ Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 00
 - [Issue #54 — Define and test security boundaries before adding another language](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/54)
 
 - [Issue #55 — Rebuild deny-by-default authorization with Cosmos tests](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/55)
+
+- [Issue #56 — Review J.A.R.V.I.S. V7 iframe isolation and audio resource cleanup](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/56)
