@@ -31,6 +31,7 @@
 - [Security Architecture](security/SECURITY_ARCHITECTURE.md)
 - [Multi-language Security Model](security/MULTI_LANGUAGE_SECURITY_MODEL.md)
 - [Migration Audit — permissions and policy contracts (009)](reports/migration/AUDIT-2026-10-08-009.md)
+- [Migration Audit — storage, router and existing J.A.R.V.I.S. contracts (010)](reports/migration/AUDIT-2026-10-08-010.md)
 - [Test Strategy](testing/TEST_STRATEGY.md)
 - [ADR-0001](decisions/ADR/ADR-0001-rebuild-not-copy.md)
 - [ADR-0002 — SQL-first data layer](decisions/ADR/ADR-0002-sql-first-data-layer.md)
