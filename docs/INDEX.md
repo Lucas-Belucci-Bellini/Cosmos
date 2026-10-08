@@ -58,5 +58,9 @@
 - [Issue #33 — Projects, roadmap, profile and downloads](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/33)
 - [Issue #34 — 3D gallery and asset budgets](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/34)
 - [Issue #35 — Security, diagnostics and privacy](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/35)
+- [Issue #36 — Tests, fixtures and regression contracts](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/36)
+- [Issue #37 — Dataset provenance, schemas and validation](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/37)
+- [Issue #38 — Asset selection, hashes, licensing and storage](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/38)
+- [Issue #39 — CI/CD, builds, releases and rollback](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/39)
 
 Catalog entries and issues represent discovery/planned work, not proof of implementation. A capability is migrated only after its own acceptance criteria and tests pass.
