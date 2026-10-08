@@ -61,6 +61,8 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 
 | FTR-051 | Security/Authorization | Política central, permissões explícitas, negação por padrão, revogação e auditoria | `src/core/permissions.ts`, `src/core/politica.js`, testes de permissão e política | Autorização server-side, isolamento de recursos/tenants, falhas de política | P1 | REBUILD |
 
+| FTR-052 | J.A.R.V.I.S. / Tool Runtime | Catálogo tipado de ferramentas, validação de chamadas, registro de plugins e execução de skills isoladas | `src/utils/jarvis-tools.js`, `src/utils/jarvis-skills*`, `src/core/permissions.ts` | Validação de schema, colisões, autorização, isolamento, cancelamento e auditoria | P1 | REBUILD |
+
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
