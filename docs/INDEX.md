@@ -44,5 +44,10 @@
 - [Issue #20 — APIs and backend](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/20)
 - [Issue #21 — Desktop and local integration](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/21)
 - [Issue #22 — Automation and scripts](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/22)
+- [Issue #23 — Logic, encoding and QR tools](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/23)
+- [Issue #24 — 3D, charts and visual themes](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/24)
+- [Issue #25 — Economy and exchange-rate data](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/25)
+- [Issue #26 — Games and modpacks](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/26)
+- [Issue #27 — Narrative universe and chronicles](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/27)
 
 Catalog entries and issues represent discovery/planned work, not proof of implementation. A capability is migrated only after its own acceptance criteria and tests pass.
