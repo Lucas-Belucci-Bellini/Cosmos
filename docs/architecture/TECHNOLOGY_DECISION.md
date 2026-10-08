@@ -18,7 +18,7 @@ Reconstruir no Cosmos as funcionalidades úteis do Projeto-Baluarte, preservando
 | IA, agentes e pipelines | Python | Orquestração de IA, avaliação, preparação de dados e integração com bibliotecas de ML. |
 | API e serviços | TypeScript ou Rust, por caso de uso | Endpoints e serviços de aplicação; a escolha depende de deployment, carga e limites de segurança. |
 | Contratos entre linguagens | JSON Schema/OpenAPI e mensagens versionadas | Tipos, validação, erros, compatibilidade e evolução entre UI, runtime e serviços de IA. |
-| Dados transacionais | PostgreSQL/Supabase ou SQLite local, conforme o modo | Estado de conta, configurações e dados estruturados. |
+| Dados transacionais | PostgreSQL como alvo central SQL; provedor gerenciado ainda em avaliação | Estado de conta, configurações e dados estruturados com constraints, relações, transações e migrações versionadas. SQLite só para requisito local/offline explícito. |
 | Assets e datasets grandes | Object storage/CDN com manifestos e checksums | Evitar que o Git carregue arquivos gerados, caches ou grandes coleções de mídia. |
 
 ## Integração local com o PC e ferramentas de programação
@@ -51,6 +51,10 @@ Avaliar React, Vue e Svelte com TypeScript a partir de critérios concretos: ace
 6. Avaliação de empacotamento, atualização, logs, deploy, custo e suporte a Windows.
 7. ADR que registra decisão, alternativas rejeitadas, consequências e plano de migração.
 
+## Banco de dados SQL
+
+A direção SQL-first está aprovada em ADR-0002: PostgreSQL é o alvo central do modelo relacional. O provedor gerenciado (incluindo Supabase) permanece pendente de avaliação operacional e de segurança. SQLite só será considerado para uso local/offline com sincronização explícita. Ver `../data/DATABASE_STRATEGY.md` e `../data/SQL_DATA_MODEL_PLAN.md`.
+
 ## Estado da decisão
 
-A direção TypeScript + Rust + Python está registrada como alvo de projeto. Framework frontend, transporte entre processos, empacotamento desktop e divisão final dos serviços permanecem pendentes de protótipos e ADR. Não declarar a stack final aprovada até os critérios acima serem verificados.
+A direção TypeScript + Rust + Python e a camada central SQL estão registradas como alvo de projeto. Framework frontend, transporte entre processos, empacotamento desktop, provedor PostgreSQL e divisão final dos serviços permanecem pendentes de protótipos e ADR. Não declarar a stack final aprovada até os critérios aplicáveis serem verificados.
