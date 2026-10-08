@@ -73,6 +73,8 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 
 | MIG-061 | `src/core/permissions.ts`, `src/core/politica.js`, `test/permissions.test.js`, `test/politica.test.js`, `docs/v2/V2_SECURITY_RULES.md` | catálogo de permissões, negação por padrão, riscos, curinga, revogação e contratos de teste | Security/Authorization Cosmos | REBUILD/REFERENCE | DOCUMENTED | Auditoria estática confirmou invariantes úteis, mas o motor de origem no cliente não substitui autorização server-side. Reimplementar com testes por pedido/recurso/tenant; nenhum teste foi executado nesta auditoria. |
 
+| MIG-062 | `src/utils/jarvis-tools.js`, `src/core/permissions.ts`, `src/core/politica.js` | catálogo de ferramentas J.A.R.V.I.S., schemas, ferramentas dinâmicas e skills | runtime de ferramentas Cosmos | REBUILD/ADAPT | DOCUMENTED | Auditoria estática #012 identificou contratos úteis de catálogo/foco e controles locais, mas exige validação real de entrada, prevenção de colisões, isolamento de skills e autorização server-side; nenhum código executável legado deve ser importado automaticamente. |
+
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
