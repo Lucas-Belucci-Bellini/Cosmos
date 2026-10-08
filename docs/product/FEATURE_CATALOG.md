@@ -63,6 +63,9 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 
 | FTR-052 | J.A.R.V.I.S. / Tool Runtime | Catálogo tipado de ferramentas, validação de chamadas, registro de plugins e execução de skills isoladas | `src/utils/jarvis-tools.js`, `src/utils/jarvis-skills*`, `src/core/permissions.ts` | Validação de schema, colisões, autorização, isolamento, cancelamento e auditoria | P1 | REBUILD |
 
+
+| FTR-053 | J.A.R.V.I.S. / API Runtime | API versionada e adaptador de modelo Hermes substituível | `api/hermes.py`, `api/chat.py`, `backend/server.py` | Segredos, disponibilidade de provedor, autenticação, limites, memória e execução de ferramentas | P0/P1 | REBUILD/REFERENCE |
+
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
