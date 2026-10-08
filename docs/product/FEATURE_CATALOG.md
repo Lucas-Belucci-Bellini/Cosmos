@@ -49,6 +49,8 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 | FTR-042 | Backend/API | Endpoints, serviços, migrations e integrações legadas | `backend/`, `backend-java/`, `api/`, `supabase/` | Consumers, secrets, contratos | P1 | REBUILD/REFERENCE |
 | FTR-043 | Technical Knowledge | Robótica e páginas técnicas especializadas | `src/pages/robotica.ts`, `tecnologia-militar.ts` | Fontes, atualização, precisão | P4 | ADAPT/REFERENCE |
 | FTR-044 | External Data | Câmbio, economia e indicadores | `src/pages/economia.ts`, `src/pages/dolar.ts` | Fonte, timestamp, unidades e quotas | P2 | ADAPT/REBUILD |
+| FTR-045 | Technical Knowledge | Enciclopédia militar, história, conflitos e indicadores por país | páginas históricas e de dados em `src/pages/` | Proveniência, atualização, metodologia | P4 | ADAPT/REFERENCE |
+| FTR-046 | Utilities/Games | Utilidades restantes, Shadow e Batalha Naval | `src/pages/utilidades.ts`, `shadow.ts`, `batalha-naval.ts` | Função real, duplicatas, consumidores | P3 | REBUILD/ADAPT |
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
