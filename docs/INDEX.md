@@ -35,6 +35,7 @@
 - [Multi-language Security Model](security/MULTI_LANGUAGE_SECURITY_MODEL.md)
 - [Migration Audit — permissions and policy contracts (009)](reports/migration/AUDIT-2026-10-08-009.md)
 - [Migration Audit — storage, router and existing J.A.R.V.I.S. contracts (010)](reports/migration/AUDIT-2026-10-08-010.md)
+- [Migration Audit — J.A.R.V.I.S. tool catalog and dynamic skills (012)](reports/migration/AUDIT-2026-10-08-012.md)
 - [Migration Audit — J.A.R.V.I.S. iframe security and audio lifecycle (011)](reports/migration/AUDIT-2026-10-08-011.md)
 - [Test Strategy](testing/TEST_STRATEGY.md)
 - [ADR-0001](decisions/ADR/ADR-0001-rebuild-not-copy.md)
@@ -81,9 +82,9 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 ## Latest migration audit
 
-- Feature Catalog: 51 capability groups.
-- Migration Matrix: 61 traceable rows.
-- Latest report: `reports/migration/AUDIT-2026-10-08-010.md`.
+- Feature Catalog: 52 capability groups.
+- Migration Matrix: 62 traceable rows.
+- Latest report: `reports/migration/AUDIT-2026-10-08-012.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
 
 
@@ -106,3 +107,5 @@ Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 00
 - [Issue #55 — Rebuild deny-by-default authorization with Cosmos tests](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/55)
 
 - [Issue #56 — Review J.A.R.V.I.S. V7 iframe isolation and audio resource cleanup](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/56)
+
+- [Issue #57 — Define a validated and isolated J.A.R.V.I.S. tool execution contract](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/57)
