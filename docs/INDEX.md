@@ -29,6 +29,7 @@
 - [Technology Decision](architecture/TECHNOLOGY_DECISION.md)
 - [External Resources](integrations/EXTERNAL_RESOURCES.md)
 - [Security Architecture](security/SECURITY_ARCHITECTURE.md)
+- [Multi-language Security Model](security/MULTI_LANGUAGE_SECURITY_MODEL.md)
 - [Test Strategy](testing/TEST_STRATEGY.md)
 - [ADR-0001](decisions/ADR/ADR-0001-rebuild-not-copy.md)
 - [ADR-0002 — SQL-first data layer](decisions/ADR/ADR-0002-sql-first-data-layer.md)
@@ -93,3 +94,5 @@ Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 00
 - [Issue #52 — Storage, session and SQL-safe remote contracts](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/52)
 
 - [Issue #53 — Map legacy SQL consumers and choose Cosmos PostgreSQL slice](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/53)
+
+- [Issue #54 — Define and test security boundaries before adding another language](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/54)
