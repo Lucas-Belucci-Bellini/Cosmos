@@ -55,6 +55,8 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 
 | FTR-048 | Data Layer / Identity | Storage versionado, fallback offline, projeção de sessão e adaptadores remotos seguros | `src/core/storage.ts`, `src/core/auth-session.ts`, `src/core/supabase.js`, `src/core/permissions.ts` | Privacidade, autorização server-side, migrações e falhas de rede | P1 | REBUILD/ADAPT |
 
+| FTR-049 | Data/Platform | Mural, métricas públicas e conteúdo com fallback local | `src/pages/mural.ts`, `src/utils/visit-counter.ts`, `src/utils/page-views.ts` | Consistência, abuso de RPC, fonte de verdade e RLS | P2 | REBUILD/REFERENCE |
+
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
