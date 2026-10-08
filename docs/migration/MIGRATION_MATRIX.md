@@ -45,6 +45,14 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 | MIG-037 | `.obsidian`, canvases e notas pessoais/projeto | base de conhecimento | docs/knowledge opcional | REFERENCE/ARCHIVE | DISCOVERY | Filtrar duplicatas e conteúdo não destinado ao produto. |
 | MIG-038 | `test/`, testes e fixtures antigos | evidências de comportamento | testes de regressão Cosmos | REFERENCE/ADAPT | DISCOVERY | Reutilizar casos de teste após revisar expectativas; não considerar testes antigos como prova do Cosmos. |
 
+| MIG-039 | `src/main.js`, `src/core`, `src/layout`, `src/pages/home.ts` | shell, router, navegação e lifecycle | shell Cosmos | REBUILD | PLANNED | Criar contrato de módulo e testes de rota; não importar o shell antigo. |
+| MIG-040 | `src/pages/git-nexus*`, `src/utils/git-nexus-*`, `src/data/codemap.json` | inteligência de repositórios | Developer Tools | REBUILD/ADAPT | DISCOVERY | Confirmar fontes, atualidade do índice, exclusões e limites de processamento. |
+| MIG-041 | `src/pages/regex.ts`, `src/pages/simbolos.ts`, `src/pages/utilidades.ts` | regex e utilitários de texto | Utilities | REBUILD/ADAPT | DISCOVERY | Validar Unicode, entradas inválidas e padrões que possam bloquear a UI. |
+| MIG-042 | `src/pages/tabela-periodica.ts` | tabela periódica | Science/Learning | ADAPT/REBUILD | DISCOVERY | Identificar fonte, licença, unidades e valores de referência. |
+| MIG-043 | `src/pages/mural.ts`, `src/pages/comms.ts`, `src/pages/conselho.ts`, `src/core/events*` | mural, eventos e notificações | Communication opcional | REBUILD/REFERENCE | DISCOVERY | Definir consumidor real, identidade, autorização e retenção antes de construir. |
+| MIG-044 | `src/pages/projetos.ts`, `roadmap.ts`, `sobre.ts`, `baixar.ts`, `perfil.ts` | projetos, roadmap, perfil e downloads | Product/Projects | ADAPT/REBUILD | DISCOVERY | Separar conteúdo público de dados privados e validar origem dos downloads. |
+| MIG-045 | `src/pages/modelos-3d.ts`, `src/data/modelos-3d.json`, `public/modelos-3d/` | galeria e visualizador 3D | Visual/Assets | ADAPT/REBUILD | DISCOVERY | Selecionar assets por consumidor, licença, checksum e orçamento de tamanho. |
+| MIG-046 | `src/pages/diagnostico.ts`, `src/pages/seguranca.ts`, `src/pages/ciberseg.ts` | diagnóstico e segurança defensiva | Security/Operations | REBUILD/ADAPT | DISCOVERY | Distinguir evidência de hipótese e impedir ações fora do escopo autorizado. |
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
