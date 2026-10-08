@@ -7,15 +7,16 @@
 - [Roadmap](roadmap/ROADMAP.md)
 
 ## Discovery and migration
-- [Feature Catalog — 36 capability groups](product/FEATURE_CATALOG.md)
-- [Migration Matrix — 46 traceable groups](migration/MIGRATION_MATRIX.md)
+- [Feature Catalog — 46 capability groups](product/FEATURE_CATALOG.md)
+- [Migration Matrix — 56 traceable rows](migration/MIGRATION_MATRIX.md)
 - [Data Catalog](data/DATA_CATALOG.md)
 - [Asset Catalog](assets/ASSET_CATALOG.md)
 - [Page Inventory](INVENTARIO_PAGINAS_BALUARTE.md)
 - [Functional Sub-inventory — expanded audit map](migration/SUBINVENTARIO_FUNCIONAL.md)
 - [Storage Analysis](infrastructure/STORAGE_ANALYSIS.md)
 - [Raw Storage Audit](infrastructure/STORAGE_AUDIT_RAW.txt)
-- [Migration Progress Report — 2026-10-08](reports/migration/AUDIT-2026-10-08-001.md)
+- [Migration Progress Report — 2026-10-08 (001)](reports/migration/AUDIT-2026-10-08-001.md)
+- [Migration Audit — source-code evidence (004)](reports/migration/AUDIT-2026-10-08-004.md)
 
 ## Architecture and quality
 - [System Map](architecture/SYSTEM_MAP.md)
@@ -71,8 +72,12 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 - Feature Catalog: 46 capability groups.
 - Migration Matrix: 56 traceable rows.
-- Latest report: `reports/migration/AUDIT-2026-10-08-002.md`.
+- Latest report: `reports/migration/AUDIT-2026-10-08-004.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
 
 
-Latest audit: `reports/migration/AUDIT-2026-10-08-003.md`. Follow-up Issues #48–#49 cover the remaining military-history/data pages and utilities/Shadow/Batalha Naval.
+Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 004 now records static inspection of real source files for router/shell, J.A.R.V.I.S. context/memory/tools, backup/restore, and integration-test strategy. This is source inspection only; no tests were executed in this audit.
+
+
+- [Issue #48 — Encyclopedia/history datasets](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/48)
+- [Issue #49 — Remaining utilities audit](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/49)
