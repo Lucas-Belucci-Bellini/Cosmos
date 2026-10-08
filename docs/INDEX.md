@@ -65,3 +65,11 @@
 - [Issue #39 — CI/CD, builds, releases and rollback](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/39)
 
 Catalog entries and issues represent discovery/planned work, not proof of implementation. A capability is migrated only after its own acceptance criteria and tests pass.
+
+
+## Latest migration audit
+
+- Feature Catalog: 44 capability groups.
+- Migration Matrix: 54 traceable rows.
+- Latest report: `reports/migration/AUDIT-2026-10-08-002.md`.
+- New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
