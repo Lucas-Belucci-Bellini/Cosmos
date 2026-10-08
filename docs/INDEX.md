@@ -7,8 +7,8 @@
 - [Roadmap](roadmap/ROADMAP.md)
 
 ## Discovery and migration
-- [Feature Catalog — 48 capability groups](product/FEATURE_CATALOG.md)
-- [Migration Matrix — 58 traceable rows](migration/MIGRATION_MATRIX.md)
+- [Feature Catalog — 49 capability groups](product/FEATURE_CATALOG.md)
+- [Migration Matrix — 59 traceable rows](migration/MIGRATION_MATRIX.md)
 - [Data Catalog](data/DATA_CATALOG.md)
 - [Database Strategy — PostgreSQL / SQL-first](data/DATABASE_STRATEGY.md)
 - [SQL Data Model Plan](data/SQL_DATA_MODEL_PLAN.md)
@@ -74,9 +74,9 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 ## Latest migration audit
 
-- Feature Catalog: 48 capability groups.
-- Migration Matrix: 58 traceable rows.
-- Latest report: `reports/migration/AUDIT-2026-10-08-006.md`.
+- Feature Catalog: 49 capability groups.
+- Migration Matrix: 59 traceable rows.
+- Latest report: `reports/migration/AUDIT-2026-10-08-007.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
 
 
@@ -91,3 +91,5 @@ Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 00
 - [Issue #51 — PostgreSQL/SQL database foundation](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/51)
 
 - [Issue #52 — Storage, session and SQL-safe remote contracts](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/52)
+
+- [Issue #53 — Map legacy SQL consumers and choose Cosmos PostgreSQL slice](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/53)
