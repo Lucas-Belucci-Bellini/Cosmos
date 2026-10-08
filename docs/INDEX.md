@@ -1,7 +1,9 @@
 # Cosmos Documentation Index
 
 ## Governing documents
-- [Master Plan](COSMOS_MASTER_PLAN.md)
+- [Claude Code Instructions](../CLAUDE.md)
+
+- [Master Plan / Master Engineering Plan](COSMOS_MASTER_PLAN.md)
 - [Baluarte Reference Policy](migration/BALUARTE_REFERENCE_POLICY.md)
 - [Migration Matrix](migration/MIGRATION_MATRIX.md)
 - [Roadmap](roadmap/ROADMAP.md)
