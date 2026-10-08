@@ -8,7 +8,7 @@
 
 ## Discovery and migration
 - [Feature Catalog — 50 capability groups](product/FEATURE_CATALOG.md)
-- [Migration Matrix — 60 traceable rows](migration/MIGRATION_MATRIX.md)
+- [Migration Matrix — 61 traceable rows](migration/MIGRATION_MATRIX.md)
 - [Data Catalog](data/DATA_CATALOG.md)
 - [Database Strategy — PostgreSQL / SQL-first](data/DATABASE_STRATEGY.md)
 - [SQL Data Model Plan](data/SQL_DATA_MODEL_PLAN.md)
@@ -29,7 +29,7 @@
 - [Technology Decision](architecture/TECHNOLOGY_DECISION.md)
 - [External Resources](integrations/EXTERNAL_RESOURCES.md)
 - [Security Architecture](security/SECURITY_ARCHITECTURE.md)
-- [Multi-language Security Model](security/MULTI_LANGUAGE_SECURITY_MODEL.md)
+- [Multi-language Security Model](security/MULTI_LANGUAGE_SECURITY_MODEL.md)\n- [Migration Audit — permissions and policy contracts (009)](reports/migration/AUDIT-2026-10-08-009.md)
 - [Test Strategy](testing/TEST_STRATEGY.md)
 - [ADR-0001](decisions/ADR/ADR-0001-rebuild-not-copy.md)
 - [ADR-0002 — SQL-first data layer](decisions/ADR/ADR-0002-sql-first-data-layer.md)
@@ -77,7 +77,7 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 - Feature Catalog: 50 capability groups.
 - Migration Matrix: 60 traceable rows.
-- Latest report: `reports/migration/AUDIT-2026-10-08-008.md`.
+- Latest report: `reports/migration/AUDIT-2026-10-08-009.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
 
 
@@ -95,4 +95,4 @@ Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 00
 
 - [Issue #53 — Map legacy SQL consumers and choose Cosmos PostgreSQL slice](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/53)
 
-- [Issue #54 — Define and test security boundaries before adding another language](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/54)
+- [Issue #54 — Define and test security boundaries before adding another language](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/54)\n\n- [Issue #55 — Rebuild deny-by-default authorization with Cosmos tests](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/55)
