@@ -20,6 +20,9 @@
 - [Migration Progress Report — 2026-10-08 (001)](reports/migration/AUDIT-2026-10-08-001.md)
 - [Migration Audit — source-code evidence (004)](reports/migration/AUDIT-2026-10-08-004.md)
 - [Migration Audit — SQL-first database decision (005)](reports/migration/AUDIT-2026-10-08-005.md)
+- [Migration Audit — storage/session/remote contracts (006)](reports/migration/AUDIT-2026-10-08-006.md)
+- [Migration Audit — legacy SQL consumers (007)](reports/migration/AUDIT-2026-10-08-007.md)
+- [Migration Audit — J.A.R.V.I.S., backup and router (008)](reports/migration/AUDIT-2026-10-08-008.md)
 
 ## Architecture and quality
 - [System Map](architecture/SYSTEM_MAP.md)
@@ -77,9 +80,9 @@ Catalog entries and issues represent discovery/planned work, not proof of implem
 
 ## Latest migration audit
 
-- Feature Catalog: 50 capability groups.
-- Migration Matrix: 60 traceable rows.
-- Latest report: `reports/migration/AUDIT-2026-10-08-009.md`.
+- Feature Catalog: 51 capability groups.
+- Migration Matrix: 61 traceable rows.
+- Latest report: `reports/migration/AUDIT-2026-10-08-010.md`.
 - New follow-up Issues: #40–#47 (media, geospatial, cryptography education, games, identity, backend/API, technical content, and external indicators).
 
 
