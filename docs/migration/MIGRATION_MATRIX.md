@@ -53,6 +53,14 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 | MIG-044 | `src/pages/projetos.ts`, `roadmap.ts`, `sobre.ts`, `baixar.ts`, `perfil.ts` | projetos, roadmap, perfil e downloads | Product/Projects | ADAPT/REBUILD | DISCOVERY | Separar conteúdo público de dados privados e validar origem dos downloads. |
 | MIG-045 | `src/pages/modelos-3d.ts`, `src/data/modelos-3d.json`, `public/modelos-3d/` | galeria e visualizador 3D | Visual/Assets | ADAPT/REBUILD | DISCOVERY | Selecionar assets por consumidor, licença, checksum e orçamento de tamanho. |
 | MIG-046 | `src/pages/diagnostico.ts`, `src/pages/seguranca.ts`, `src/pages/ciberseg.ts` | diagnóstico e segurança defensiva | Security/Operations | REBUILD/ADAPT | DISCOVERY | Distinguir evidência de hipótese e impedir ações fora do escopo autorizado. |
+| MIG-047 | `src/pages/media.ts`, `filmes.ts`, `tv.ts`, `videos.ts`, `musicas.ts`, `radio.ts` | catálogo e players audiovisuais | Media adapters | ADAPT/REFERENCE | DISCOVERY | Confirmar providers, licenças, links e fallback. |
+| MIG-048 | `src/pages/mapa.ts`, `radar.ts`, `geopulse.ts`, `triangulacao.ts`, `find.ts`, `visao.ts` | mapas, geodados e localização | Geospatial | REBUILD/REFERENCE | DISCOVERY | Validar fontes, permissões e precisão declarada. |
+| MIG-049 | `src/pages/cripto/`, `src/pages/esteganografia.ts` | ferramentas criptográficas educacionais | Learning/Security | REBUILD/REFERENCE | DISCOVERY | Distinguir demonstração de segurança de produção; testar formatos e limites. |
+| MIG-050 | `src/pages/jogos.ts`, `modpack.ts`, `zomboid.ts`, `zomboid-admin.ts`, `src/data/zomboid-*` | jogos, modpacks e administração de servidor | Game Knowledge | ADAPT/REBUILD | DISCOVERY | Separar catálogo de ações administrativas e exigir autorização. |
+| MIG-051 | `src/pages/login.ts`, `perfil.ts`, `src/core/auth-session.ts` | identidade, sessão e preferências | Identity/Data Layer | REBUILD | DISCOVERY | Definir fluxo, modelo de ameaça, retenção e testes de autorização. |
+| MIG-052 | `backend/`, `backend-java/`, `api/`, `supabase/` | serviços, endpoints e banco | API/Services | REBUILD/REFERENCE | DISCOVERY | Mapear consumidores, schemas e secrets; não portar credenciais. |
+| MIG-053 | `src/pages/robotica.ts`, `src/pages/tecnologia-militar.ts` e páginas técnicas | conteúdo técnico especializado | Technical Knowledge | ADAPT/REFERENCE | DISCOVERY | Curar fontes e separar artigos de simuladores verificáveis. |
+| MIG-054 | `src/pages/economia.ts`, `src/pages/dolar.ts` e helpers de API | câmbio e indicadores externos | Data Integrations | REBUILD/ADAPT | DISCOVERY | Mostrar fonte, unidade, timestamp, atraso e política de falha. |
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
