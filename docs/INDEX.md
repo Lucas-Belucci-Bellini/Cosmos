@@ -12,6 +12,7 @@
 - [Data Catalog](data/DATA_CATALOG.md)
 - [Asset Catalog](assets/ASSET_CATALOG.md)
 - [Page Inventory](INVENTARIO_PAGINAS_BALUARTE.md)
+- [Functional Sub-inventory — expanded audit map](migration/SUBINVENTARIO_FUNCIONAL.md)
 - [Storage Analysis](infrastructure/STORAGE_ANALYSIS.md)
 - [Raw Storage Audit](infrastructure/STORAGE_AUDIT_RAW.txt)
 
@@ -49,5 +50,13 @@
 - [Issue #25 — Economy and exchange-rate data](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/25)
 - [Issue #26 — Games and modpacks](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/26)
 - [Issue #27 — Narrative universe and chronicles](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/27)
+- [Issue #28 — Cosmos shell, routes and Home](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/28)
+- [Issue #29 — Git Nexus and repository intelligence](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/29)
+- [Issue #30 — Regex, text and utility tools](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/30)
+- [Issue #31 — Periodic table and science tools](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/31)
+- [Issue #32 — Communication, mural and notifications](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/32)
+- [Issue #33 — Projects, roadmap, profile and downloads](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/33)
+- [Issue #34 — 3D gallery and asset budgets](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/34)
+- [Issue #35 — Security, diagnostics and privacy](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/35)
 
 Catalog entries and issues represent discovery/planned work, not proof of implementation. A capability is migrated only after its own acceptance criteria and tests pass.
