@@ -57,6 +57,8 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 
 | FTR-049 | Data/Platform | Mural, métricas públicas e conteúdo com fallback local | `src/pages/mural.ts`, `src/utils/visit-counter.ts`, `src/utils/page-views.ts` | Consistência, abuso de RPC, fonte de verdade e RLS | P2 | REBUILD/REFERENCE |
 
+| FTR-050 | J.A.R.V.I.S. / Memory | Seleção de contexto e recuperação lexical entre sessões | `src/utils/jarvis-context.ts`, `src/utils/jarvis-recall.js` | Privacidade, custo de contexto, cache e isolamento por usuário | P1 | REBUILD/ADAPT |
+
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
