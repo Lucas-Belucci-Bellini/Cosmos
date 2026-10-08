@@ -86,3 +86,5 @@ Audit 003 documented the remaining-page inventory and Issues #48–#49. Audit 00
 - [Issue #49 — Remaining utilities audit](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/49)
 
 - [Issue #50 — Compare real contracts for shell, memory and backup](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/50)
+
+- [Issue #51 — PostgreSQL/SQL database foundation](https://github.com/Lucas-Belucci-Bellini/Cosmos/issues/51)
