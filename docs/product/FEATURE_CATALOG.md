@@ -41,6 +41,14 @@ Este catálogo agrupa as capacidades identificadas no repositório de origem. É
 | FTR-034 | Product/Projects | Projetos, roadmap, perfil público, sobre e downloads | `src/pages/projetos.ts`, `roadmap.ts`, `sobre.ts`, `baixar.ts`, `perfil.ts` | Conteúdo canônico, links, dados privados | P2 | REBUILD/ADAPT |
 | FTR-035 | Visual | Galeria 3D, preview, seleção e carregamento de modelos | `src/pages/modelos-3d.ts`, `src/data/modelos-3d.json`, `public/modelos-3d/` | WebGL, licença, tamanho dos assets | P3 | ADAPT/REBUILD |
 | FTR-036 | Security/Operations | Diagnóstico, segurança defensiva e privacidade | `src/pages/diagnostico.ts`, `src/pages/seguranca.ts`, `src/pages/ciberseg.ts` | Escopo autorizado, falsos positivos, dados sensíveis | P1 | REBUILD/ADAPT |
+| FTR-037 | Media | Catálogo audiovisual, players, rádio e música | `src/pages/media.ts`, `filmes.ts`, `tv.ts`, `videos.ts`, `musicas.ts`, `radio.ts` | Providers, licença, links externos | P3 | ADAPT/REFERENCE |
+| FTR-038 | Geospatial | Mapas, Geopulse, radar, find e triangulação | `src/pages/mapa.ts`, `radar.ts`, `geopulse.ts`, `triangulacao.ts`, `find.ts` | Localização, precisão, permissões | P3 | REBUILD/REFERENCE |
+| FTR-039 | Security/Learning | Criptografia educacional e esteganografia | `src/pages/cripto/`, `src/pages/esteganografia.ts` | Limites, formatos e alegações de segurança | P3 | REBUILD/REFERENCE |
+| FTR-040 | Games | Jogos, modpacks e administração Project Zomboid | `src/pages/jogos.ts`, `modpack.ts`, `zomboid.ts`, `zomboid-admin.ts` | Compatibilidade, credenciais, efeitos remotos | P3 | ADAPT/REBUILD |
+| FTR-041 | Identity | Login, sessão, perfil e preferências | `src/pages/login.ts`, `perfil.ts`, `src/core/auth-session.ts` | Autorização, sessão, dados sensíveis | P1 | REBUILD |
+| FTR-042 | Backend/API | Endpoints, serviços, migrations e integrações legadas | `backend/`, `backend-java/`, `api/`, `supabase/` | Consumers, secrets, contratos | P1 | REBUILD/REFERENCE |
+| FTR-043 | Technical Knowledge | Robótica e páginas técnicas especializadas | `src/pages/robotica.ts`, `tecnologia-militar.ts` | Fontes, atualização, precisão | P4 | ADAPT/REFERENCE |
+| FTR-044 | External Data | Câmbio, economia e indicadores | `src/pages/economia.ts`, `src/pages/dolar.ts` | Fonte, timestamp, unidades e quotas | P2 | ADAPT/REBUILD |
 ## Regras de priorização
 
 1. P0/P1 primeiro: shell, integração do V7, ferramentas de desenvolvimento seguras, dados básicos e conhecimento essencial.
