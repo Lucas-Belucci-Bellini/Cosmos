@@ -69,6 +69,8 @@ Métodos: `COPY` (dados/artefatos aprovados sem lógica acoplada), `ADAPT` (tran
 
 | MIG-059 | `src/pages/mural.ts`, `src/utils/visit-counter.ts`, `src/utils/page-views.ts`, `src/utils/mil-curation.ts`; `supabase/migrations/20260622033728_create_mural_posts.sql`, `20260622214241_site_stats.sql`, `20260628192255_mil_curation.sql` | consumidores reais de tabelas SQL, fallback local e RPCs | PostgreSQL Cosmos, apenas se capacidades forem aprovadas | REFERENCE/REBUILD | DOCUMENTED | Auditoria rastreou mural, métricas e curadoria. Banco legado contém múltiplos domínios; RPCs SECURITY DEFINER exigem revisão e nenhuma tabela deve ser copiada sem consumidor Cosmos confirmado. |
 
+| MIG-060 | `src/utils/jarvis-context.ts`, `src/utils/jarvis-recall.js` | orçamento de contexto, cache de briefing e recall TF-IDF/cosseno | runtime de IA/memória Cosmos | REBUILD/ADAPT | DOCUMENTED | Contrato legado limita mensagens/caracteres e corpus de recall a 256 docs; Cosmos deve testar truncamento, ranking, isolamento e não confundir cache com persistência. |
+
 ## Regras de migração
 
 - Nunca copiar todo o checkout, `node_modules`, builds, caches, artefatos gerados ou secrets.
